@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Tugas Pixel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Press Start 2P', cursive;
+      background-image: url('pixelcewewallpaper.gif');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #ffffff;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    form {
+      background-color: rgba(20, 20, 40, 0.85);
+      padding: 25px;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 0 15px #ff69b4;
+      border: 2px solid #ff69b4;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-size: 10px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 8px;
+      border: none;
+      font-family: 'Press Start 2P', cursive;
+      background-color: #1e1e2f;
+      color: #ffccff;
+      font-size: 10px;
+    }
+
+    .radio-group, .checkbox-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .submit-btn {
+      background-color: #ff69b4;
+      color: white;
+      margin-top: 20px;
+      padding: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 10px;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 10px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 14px;
+      margin-bottom: 20px;
+      color: #ffccff;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        background-position: top;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <form action="https://formsubmit.co/simatupanggracia08@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+
+    <h2>Form Pendaftaran</h2>
+
+    <label for="nama">Nama:</label>
+    <input type="text" id="nama" name="Nama">
+
+    <label for="password">Kata Sandi:</label>
+    <input type="password" id="password" name="Password">
+
+    <label for="alamat">Alamat:</label>
+    <textarea id="alamat" name="Alamat" rows="3"></textarea>
+
+    <label>Jenis Kelamin:</label>
+    <div class="radio-group">
+      <label><input type="radio" name="Jenis Kelamin" value="Pria"> Pria</label>
+      <label><input type="radio" name="Jenis Kelamin" value="Wanita"> Wanita</label>
+    </div>
+
+    <label>Bahasa yang Dikuasai:</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="Bahasa yang Dikuasai" value="Indonesia"> Indonesia</label>
+      <label><input type="checkbox" name="Bahasa yang Dikuasai" value="Inggris"> Inggris</label>
+      <label><input type="checkbox" name="Bahasa yang Dikuasai" value="Jepang"> Jepang</label>
+      <label><input type="checkbox" name="Bahasa yang Dikuasai" value="Mandarin"> Mandarin</label>
+    </div>
+
+    <label for="jurusan">Pilih Jurusan:</label>
+    <select id="jurusan" name="Jurusan">
+      <option value="Teknologi Informasi">Teknologi Informasi</option>
+      <option value="Ilmu Komputer">Ilmu Komputer</option>
+    </select>
+
+    <input type="submit" value="KIRIM" class="submit-btn">
+  </form>
+
+</body>
+</html>
